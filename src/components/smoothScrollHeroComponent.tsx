@@ -179,7 +179,7 @@ const Schedule = () => {
       >
         Buoni disponibili
       </motion.h1>
-      <ScheduleItem title="BUONO PER fare " description="buono per fare la spesa insieme " quantity="Buoni: 3" />
+      <ScheduleItem title="BUONO SPESA " description="buono per fare la spesa insieme " quantity="Buoni: 3" />
       <ScheduleItem title="BUONO PER SFOGARSI SENZA GIUDIZIO" description="buono per sfogarsi" quantity="Buoni: 3" />
       <ScheduleItem title="BUONO PER RICHIESTA SENZA FARE DOMANDE" description="buono per richiedere qualsiasi cosa senza che vengano fatte domande a riguardo" quantity="Buoni: 2" />
       <ScheduleItem title="BUONO CHEF PRIVATO" description="Cucino quello che vuoi" quantity="Buoni: 2" />
