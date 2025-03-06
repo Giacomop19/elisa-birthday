@@ -1,12 +1,11 @@
-import ActivityComponent from "@/components/activityComponent";
 import { SmoothScrollHero } from "@/components/smoothScrollHeroComponent";
 import VelocityText from "@/components/velocityText";
 import React from "react";
 export default function Home(){
-  return(
+  return (
     <>
-    <SmoothScrollHero/>
-    <VelocityText/>
+      <SmoothScrollHero/>
+      <VelocityText/>
     </>
-  );
+  )
 }

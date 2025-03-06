@@ -88,7 +88,7 @@ const CenterImage = () => {
         backgroundSize,
         opacity,
         backgroundImage:
-          "url(https://images.unsplash.com/photo-1460186136353-977e9d6085a1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+          "url(./elisa/hb.jpg)",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
@@ -100,34 +100,30 @@ const ParallaxImages = () => {
   return (
     <div className="mx-auto max-w-5xl px-4 pt-[200px]">
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="./elisa/elisa_1.png"
         alt="And example of a space launch"
         start={-200}
         end={200}
-        className="w-1/3"
+        className="w-2/3"
       />
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="./elisa/elisa_2.png"
         alt="An example of a space launch"
         start={200}
         end={-250}
         className="mx-auto w-2/3"
       />
+     
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="./elisa/elisa_6.png"
         alt="Orbiting satellite"
         start={-200}
         end={200}
         className="ml-auto w-1/3"
       />
-      <ParallaxImg
-        src="https://images.unsplash.com/photo-1494022299300-899b96e49893?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Orbiting satellite"
-        start={0}
-        end={-500}
-        className="ml-24 w-5/12"
-      />
+      
     </div>
+    
   );
 };
 
@@ -181,22 +177,25 @@ const Schedule = () => {
         transition={{ ease: "easeInOut", duration: 0.75 }}
         className="mb-20 text-4xl font-black uppercase text-zinc-50"
       >
-        Launch Schedule
+        Buoni disponibili
       </motion.h1>
-      <ScheduleItem title="NG-21" date="Dec 9th" location="Florida" />
-      
+      <ScheduleItem title="BUONO PER fare " description="buono per fare la spesa insieme " quantity="Buoni: 3" />
+      <ScheduleItem title="BUONO PER SFOGARSI SENZA GIUDIZIO" description="buono per sfogarsi" quantity="Buoni: 3" />
+      <ScheduleItem title="BUONO PER RICHIESTA SENZA FARE DOMANDE" description="buono per richiedere qualsiasi cosa senza che vengano fatte domande a riguardo" quantity="Buoni: 2" />
+      <ScheduleItem title="BUONO CHEF PRIVATO" description="Cucino quello che vuoi" quantity="Buoni: 2" />
+      <ScheduleItem title="BUONO SEGRETO" description="Si sblocca all'ultimo desiderio" quantity="Buoni 1" />
     </section>
   );
 };
 
 const ScheduleItem = ({
   title,
-  date,
-  location,
+  description,
+  quantity,
 }: {
   title: string;
-  date: string;
-  location: string;
+  description: string;
+  quantity: string;
 }) => {
   return (
     <motion.div
@@ -207,10 +206,10 @@ const ScheduleItem = ({
     >
       <div>
         <p className="mb-1.5 text-xl text-zinc-50">{title}</p>
-        <p className="text-sm uppercase text-zinc-500">{date}</p>
+        <p className="text-sm text-start uppercase text-zinc-500">{description}</p>
       </div>
-      <div className="flex items-center gap-1.5 text-end text-sm uppercase text-zinc-500">
-        <p>{location}</p>
+      <div className="grid gap-1.5 text-end text-sm uppercase text-zinc-500">
+        <p>{quantity}</p>
       </div>
     </motion.div>
   );
