@@ -38,7 +38,7 @@ import {
             className="origin-bottom-left whitespace-nowrap text-5xl font-black uppercase leading-[0.85] md:text-7xl md:leading-[0.85]"
           >
             ________________________________________________________________________________________________
-            se sei arrivata fino a qua, un giorno sarai mia Elisa
+            se sei arrivata fino a qua, volevo ringraziarti e prometterti che quando avrai bisogno, ci sarò!
           </motion.p>
         </div>
       </section>
