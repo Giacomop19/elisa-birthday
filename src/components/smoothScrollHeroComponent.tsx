@@ -6,7 +6,8 @@ import {
   useTransform,
 } from "framer-motion";
 
-import { useRef } from "react";
+import { useRef} from "react";
+
 
 export const SmoothScrollHero = () => {
   return (
@@ -22,7 +23,7 @@ export const SmoothScrollHero = () => {
       >
         <Nav />
         <Hero />
-        <Schedule />
+        
       </ReactLenis>
     </div>
   );
@@ -165,52 +166,3 @@ const ParallaxImg = ({
   );
 };
 
-const Schedule = () => {
-  return (
-    <section
-      id="launch-schedule"
-      className="mx-auto max-w-5xl px-4 py-48 text-white"
-    >
-      <motion.h1
-        initial={{ y: 48, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeInOut", duration: 0.75 }}
-        className="mb-20 text-4xl font-black uppercase text-zinc-50"
-      >
-        Buoni disponibili
-      </motion.h1>
-      <ScheduleItem title="BUONO SPESA " description="buono per fare la spesa insieme " quantity="Buoni: 3" />
-      <ScheduleItem title="BUONO PER SFOGARSI SENZA GIUDIZIO" description="buono per sfogarsi" quantity="Buoni: 3" />
-      <ScheduleItem title="BUONO PER RICHIESTA SENZA FARE DOMANDE" description="buono per richiedere qualsiasi cosa senza che vengano fatte domande a riguardo" quantity="Buoni: 2" />
-      <ScheduleItem title="BUONO CHEF PRIVATO" description="Cucino quello che vuoi" quantity="Buoni: 2" />
-      <ScheduleItem title="BUONO SEGRETO" description="Si sblocca all'ultimo desiderio" quantity="Buoni 1" />
-    </section>
-  );
-};
-
-const ScheduleItem = ({
-  title,
-  description,
-  quantity,
-}: {
-  title: string;
-  description: string;
-  quantity: string;
-}) => {
-  return (
-    <motion.div
-      initial={{ y: 48, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{ ease: "easeInOut", duration: 0.75 }}
-      className="mb-9 flex items-center justify-between border-b border-zinc-800 px-3 pb-9"
-    >
-      <div>
-        <p className="mb-1.5 text-xl text-zinc-50">{title}</p>
-        <p className="text-sm text-start uppercase text-zinc-500">{description}</p>
-      </div>
-      <div className="grid gap-1.5 text-end text-sm uppercase text-zinc-500">
-        <p>{quantity}</p>
-      </div>
-    </motion.div>
-  );
-};
