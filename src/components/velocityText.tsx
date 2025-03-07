@@ -37,7 +37,7 @@ import {
             style={{ skewX, x }}
             className="origin-bottom-left whitespace-nowrap text-5xl font-black uppercase leading-[0.85] md:text-7xl md:leading-[0.85]"
           >
-            ________________________________________________________________________________________________
+            ____________________________________________________________________
             se sei arrivata fino a qua, volevo ringraziarti e prometterti che quando avrai bisogno, ci sarò!
           </motion.p>
         </div>
