@@ -37,8 +37,8 @@ import {
             style={{ skewX, x }}
             className="origin-bottom-left whitespace-nowrap text-5xl font-black uppercase leading-[0.85] md:text-7xl md:leading-[0.85]"
           >
-            Elisa, tanti auguri, questo è un posto tutto tuo, fanne buon uso
-            Il tuo amico Giacomino
+            ________________________________________________________________________________________________
+            se sei arrivata fino a qua, un giorno sarai mia Elisa
           </motion.p>
         </div>
       </section>
